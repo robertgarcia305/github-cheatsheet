@@ -1,0 +1,29 @@
+* {
+    font-family: serif;
+    box-sizing: border-box;
+}
+
+body {
+/*   background-color: #1e1e1e;
+color: white; */
+}
+
+h3, h4, p {
+    margin: 0px;
+}
+
+.block {
+    margin: 10px 0px;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0px;
+}
+
+.note {
+    color: red;
+    border: 1px solid red;
+    background-color: #ffeeee;
+}
+
+.react h4 {
+    color: blue;
+}

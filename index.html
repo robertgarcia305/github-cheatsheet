@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Github Cheatsheet</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div class="text-wrap">
+        <h3>Github / Git Commands</h3>
+        <div class="note block">
+            <p>When wanting to push large files like images, it might throw an error and skip the commit, so abstain from pushing large files, do it step by step</p>
+        </div>
+        <div class="block">
+            <h4>Initializing a repo</h4>
+            <p>## from local folder, how to create repo on github</p>
+            <p>## you need to go on github and create a new repo</p>
+            <p>## Initialize a new Git repository</p>
+            <p>git init</p>
+            <p>## Add all the files in your project to the repository</p>
+            <p>git add .</p>
+            <p>## Create the initial commit</p>
+            <p>git commit -m "Initial commit"</p>
+            <p>then</p>
+            <p>git remote add origin https://github.com/your-username/your-repo-name.git</p>
+            <p>## If it is the first commit you do: </p>
+            <p>git push -u origin main</p>
+            <p>## or it can also be origin master</p>
+        </div>
+        <div class="block">
+            <h4>Troubleshooting the commit</h4>
+            <p>If it doesn't work you do:</p>
+            <p>git push origin master --force</p>
+            <p>then git push after that</p>
+        </div>
+        <div class="block">
+            <h4>When there's a repo already on github and want to clone it</h4>
+            <p>you need to go to the repo and copy the link on the green code button, then do the following commands</p>
+            <p>cd where you want to have the folder</p>
+            <p>git clone {link you just copied}</p>
+            <p>cd {repo name}</p>
+            <p>## to check the status of the repo</p>
+            <p>git status</p>
+            <p>git add .</p>
+            <p>git commit "new commit"</p>
+            <p>git push</p>
+        </div>
+        <div class="block react">
+            <h4>React Project</h4>
+            <p>when installing a new react project it is going to install some a folder called node_modules which dont need to go on github</p>
+            <p>you need to create a .gitignore file</p>
+            <p>1) change to the desired directory</p>
+            <p>touch .gitignore</p>
+            <p>## on the .gitignore file just add: node_modules/ </p>
+            <p>## or any other files and folders you would like for github to ignore 
+        </p>
+            <p>// if you already had node_modules files to github you run this command:</p>
+            <p>git rm -r --cached node_modules</p>
+            <p>git add .gitignore</p>
+            <p>git commit -m "Ignore node_modules folder"</p>
+            <p>git push</p>
+        </div>
+        <div class="block react">
+            <h4>To push a github repo</h4>
+            <p>## To push a React app created with npx create-react-app to a GitHub repository, follow these steps:</p>
+            <p>Create a GitHub Repository:</p>
+            <p>Click the "+" icon in the top right corner and select "New repository."</p>
+            <p>Follow the prompts to set up your repository. You can choose a name, add a description, set it to public or private, and select other options.</p>
+            <p class="note">Please don't add a readme.md file, that will be added with your react app</p>
+            <p>## Navigate to your React app's root directory using the cd command. For example:
+        </p>
+            <p>## cd path/to/your/my-tests</p>
+            <p>git init</p>
+            <p>git remote add origin https://github.com/your-username/your-repo-name.git</p>
+            <p>git branch -M main</p>
+            <p>git add .</p>
+            <p>git commit -m "Initial commit"</p>
+            <p>git push -u origin main</p>
+        </div>
+    </body>
+</html>
